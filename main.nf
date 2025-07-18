@@ -62,7 +62,7 @@ log.info """\
  genome_build                     : ${params.genome_build}
  vep_cache                        : ${file(params.annotate_config.vep.cache)}
  plugins                          : ${file(params.annotate_config.vep.plugins_scripts)}
- params.giab_vcf                    : ${params.giab_vcf}
+ params.giab_vcf                  : ${params.giab_vcf}
 
  """
 
