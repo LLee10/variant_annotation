@@ -12,7 +12,7 @@ nextflow.enable.dsl = 2
 
 container_pipeline_path = "${params.container_pipeline_path}"
 
-params.file = file("analysis/pipeline_config.json")
+params.file = file("analysis/GIAB/pipeline_config.json")
 
  
 
@@ -38,7 +38,7 @@ if (params.help) {
 
     log.info 'Example \n'
 
-    log.info 'nextflow run main.nf -params-file analysis/pipeline_config.json'
+    log.info 'nextflow run main.nf -params-file analysis/{project_name}/pipeline_config.json'
 
     log.info '\n'
 
