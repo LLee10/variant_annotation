@@ -12,3 +12,12 @@ RUN add-apt-repository -y 'ppa:deadsnakes/ppa' && \
 # Make python3.12 the default installation
 RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.12 100
 WORKDIR /root
+
+# Add bcftools for indexing vcf
+RUN wget https://github.com/samtools/bcftools/releases/download/$BCFTOOLS_VERSION/bcftools-$BCFTOOLS_VERSION.tar.bz2 && \
+  tar --bzip2 -xf bcftools-$BCFTOOLS_VERSION.tar.bz2 && \
+  make && make install
+
+ENV PATH=/opt/bcftools_install/bin:$PATH
+
+WORKDIR /root
