@@ -57,7 +57,6 @@ log.info """\
  =====================================
 
  version                          : ${params.annotate_config.version}
- author                           : ${params.annotate_config.email}
  container_pipeline_path          : ${params.container_pipeline_path}
  params.run_folder                : ${params.run_folder}
  genome_build                     : ${params.genome_build}
