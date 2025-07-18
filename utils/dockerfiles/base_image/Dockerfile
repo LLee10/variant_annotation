@@ -1,5 +1,7 @@
 FROM ubuntu:22.04
 
+LABEL base.image="annotate_base:v.0.0.1"
+
 RUN apt-get -y update && apt-get install -y curl wget software-properties-common git
 
 # Install dependencies
