@@ -62,14 +62,14 @@ log.info """\
  genome_build                     : ${params.genome_build}
  vep_cache                        : ${file(params.annotate_config.vep.cache)}
  plugins                          : ${file(params.annotate_config.vep.plugins_scripts)}
- params.sv_vcf                    : ${params.sv_vcf}
+ params.giab_vcf                    : ${params.giab_vcf}
 
  """
 
 
 // Load input vcf file as a channel
 
-vcf_channel = Channel.fromPath("${params.sv_vcf}")
+vcf_channel = Channel.fromPath("${params.giab_vcf}")
 
 // Anotation workflow
 
