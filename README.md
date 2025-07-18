@@ -2,5 +2,5 @@
 Variant Annotation using Nextflow 
 
 Command to run:
-nextflow run main.nf -params-file analysis/{project_name}/pipeline_config.json
+nextflow run main.nf -params-file analysis/giab/pipeline_config.json
 
