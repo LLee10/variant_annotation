@@ -1,0 +1,7 @@
+services:
+  annotate-base:
+    image: annotate_base:v.0.0.1
+    build: utils/dockerfiles/base_image/.
+    command: bash -c "echo image built"
+    
+    
